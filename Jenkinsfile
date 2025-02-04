@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Lscys/DM2_Typescript.git'
+                git url: 'https://github.com/Lscys/DM2_Typescript.git', branch: 'master'
             }
         }
         stage('Install') {
