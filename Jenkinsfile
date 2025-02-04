@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    environment {
+        NODE_VERSION = '18'
+    }
+
     stages {
         stage('Checkout') {
             steps {
