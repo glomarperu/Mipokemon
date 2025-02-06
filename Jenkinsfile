@@ -1,8 +1,8 @@
 pipeline {
     agent any
 
-    environment {
-        NODE_VERSION = '18'
+    tools {
+        nodejs 'node'  // Debe coincidir con el nombre que configuraste en Jenkins
     }
 
     stages {
@@ -27,7 +27,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        
     }
 
     post {
