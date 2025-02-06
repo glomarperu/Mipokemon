@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Lscys/DM2_Typescript.git', branch: 'master'
+                git url: 'https://github.com/Lscys/DM2_Typescript.git', branch: 'main'
             }
         }
         stage('Verify Node.js and npm') {
