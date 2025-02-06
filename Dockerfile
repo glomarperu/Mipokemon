@@ -4,7 +4,7 @@ FROM jenkins/jenkins:lts
 # Cambiar al usuario root para instalar paquetes
 USER root
 
-# Actualizar la lista de paquetes e instalar Git y dependencias necesarias para Node.js
+# Actualizar la lista de paquetes e instalar Git y Node.js
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -12,8 +12,11 @@ RUN apt-get update && apt-get install -y \
     && apt-get install -y nodejs \
     && npm install -g npm@latest
 
-# Verificar las instalaciones
+# Verificar instalaciones
 RUN git --version && node --version && npm --version
+
+# Agregar Node.js y npm al PATH del usuario jenkins
+RUN echo "export PATH=\$PATH:/usr/bin/node:/usr/local/bin/npm" >> /etc/profile
 
 # Volver al usuario jenkins
 USER jenkins

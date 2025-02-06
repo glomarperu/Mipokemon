@@ -11,6 +11,12 @@ pipeline {
                 git url: 'https://github.com/Lscys/DM2_Typescript.git', branch: 'master'
             }
         }
+        stage('Verify Node.js and npm') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
+            }
+        }
         stage('Install') {
             steps {
                 sh 'npm install'
