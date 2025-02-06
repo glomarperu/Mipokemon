@@ -6,13 +6,11 @@ import { TypeComponent } from './components/TypeComponent'
 
 function App() {
 
-
   return (
     <>
       <div>
         Hola mundo
         <PokemonPage />
-      
       </div>
       
     </>
