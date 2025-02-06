@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='container'>
         Hola mundo
         <PokemonPage />
       </div>
