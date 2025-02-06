@@ -9,6 +9,7 @@ export const TypeComponent = () => {
   return (
     <div>
         TypeComponent
+        Jefferson
         {name}
     </div>
   )
