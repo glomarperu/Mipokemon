@@ -5,6 +5,8 @@ import { PokemonPage } from './components/PokemonPage'
 import { TypeComponent } from './components/TypeComponent'
 
 function App() {
+ 
+  console.log("commit diegoqr")
 
   return (
     <>
