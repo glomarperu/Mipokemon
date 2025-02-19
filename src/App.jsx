@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div className='container'>
-        Hola mundo Torres
+        Hola mundo Torres Silva
         <PokemonPage />
       </div>
       
