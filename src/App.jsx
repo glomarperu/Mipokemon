@@ -6,7 +6,7 @@ import { TypeComponent } from './components/TypeComponent'
 
 function App() {
  
-  console.log("commit diegoqr nuevo prueba 1")
+  console.log("commit diegoqr NUEVA PRUEBA DE HOY 19/02/25")
 
   return (
     <>
