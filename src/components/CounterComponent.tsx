@@ -1,9 +1,7 @@
 import React from 'react'
 
 export const CounterComponent = () => {
-
-    // Logica
-
+  
     const count : number = 5;
     const increment = (value: number) => {
         return value++;
