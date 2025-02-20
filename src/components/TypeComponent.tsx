@@ -11,6 +11,7 @@ export const TypeComponent = () => {
         TypeComponent
         Jefferson
         Nuevo Pull
+        Nuevo cambio
         {name}
     </div>
   )
